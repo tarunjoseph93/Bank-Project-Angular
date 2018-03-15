@@ -1,1 +1,149 @@
 /* You can add global styles to this file, and also import other style files */
+.row .pos-down {
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 15%;
+    padding-bottom: 30%;
+}
+
+.pos-left {
+    padding-left: 15%;
+    font-size: 18px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin: 0; 
+ }
+
+.form-control-bottom {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%; 
+    font-size: large;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input.ng-invalid.ng-touched {
+    border-left: 5px solid red;
+}
+
+input.ng-valid {
+    border-left: 5px solid green;
+}
+
+.register-box-container {
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    width: 500px;
+    height: 600px;
+    padding: 0 30px 30px;
+    margin-left: 25%;
+    margin-top: 0;
+    margin-right: 40%;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    box-shadow: inset 0 0 10px grey;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.register-inner-box-container {
+    justify-content: flex-start;
+    align-self: flex-start;
+    position: relative;
+    font-family: inherit;
+}
+
+.login-box-container {
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    width: 500px;
+    height: 550px;
+    padding: 30px;
+    margin-left: 25%;
+    margin-top: 2.5%;
+    margin-right: 40%;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    box-shadow: inset 0 0 10px grey;
+    z-index: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.login-inner-box {
+    justify-content: flex-start;
+    align-self: flex-start;
+    position: relative;
+    font-family: inherit;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+  }
+  .hr-text:before {
+    content: '';
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop( #5e5e5e), to(transparent));
+    background: linear-gradient(to right, transparent,  #5e5e5e, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  .hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color:  #5e5e5e;
+    background-color: #fcfcfa;
+  }
+
+.login-inner-box > button {
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 2.5%;
+    width: 30%;
+}

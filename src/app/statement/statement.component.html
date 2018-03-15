@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="pos-left">
+        <h3><strong>Your Account Details:</strong></h3>
+        <hr>
+        <p><b>Name:</b> {{ account.name }}</p>
+        <p><b>Account Number: </b>{{ account.accountNumber }}</p>
+        <p><b>IFSC code: </b>{{ account.ifsc }}</p>
+        <p><b>Email ID: </b>{{ account.email }}</p>                
+      </div>
+    </div>
+    <div class="col-md-6" style="text-align: center; padding-top: 5%;">
+      <h3><strong>Available Balance:</strong></h3>
+      <h4>Rs.{{ account.balance }}</h4>
+    </div>
+    <div class="row pos-down">
+      <nav class="navbar navbar-default">
+        <div class="collase navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#" style="cursor: pointer;">Mini-Statement</a></li>
+            <li><a href="#" style="cursor: pointer;">Detailed Statement</a></li>
+            <li><a href="#" style="cursor: pointer;">Last 10 Transactions</a></li>
+            <li><a href="#" style="cursor: pointer;">Consolidated Statement</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a 
+              class="dropdown-toggle"
+              role="button" 
+              style="cursor: pointer;"
+              title="Filter">
+                <span>
+                  <img src="../../assets/icons/filter.png" alt="filter">
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a style="cursor: pointer;">
+                    <img src="../../assets/icons/001-download-arrow.png" alt="down-arrow"> Top-to-bottom
+                  </a>
+                </li>
+                <li>
+                  <a style="cursor: pointer;">
+                    <img src="../../assets/icons/002-up-arrow.png" alt="up-arrow"> Bottom-to-top
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr>
+      <div class="col-md-12">
+        <app-mini-statement></app-mini-statement>
+      </div>
+    </div>
+  </div>
+</div>

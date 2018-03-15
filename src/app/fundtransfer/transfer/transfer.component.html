@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <div class="col-xs-12">
+          <label for="payee"><h3>Transfer To: </h3></label>
+          <br>
+          <input id="payee" name="payee" list="payee" class="form-control-bottom">
+          <datalist id="payee">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+          </datalist>
+          <br><br><br><br>
+        </div>
+        <div class="col-xs-12">
+          <label for="amount"><h3>Amount: </h3></label>
+          <br>
+          <input type="number" id="amount" class="form-control-bottom">
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+        <div class="col-xs-12" style="padding-left: 85%;">
+          <button class="btn btn-success" type="submit">Transfer</button>
+        </div>
+        <div class="col-xs-12">
+          <ul>
+            <li role="presentation"><a style="cursor: pointer;">Add new payee</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <app-brief-statement></app-brief-statement>
+      </div>
+    </div>
+  </div>
+</div>

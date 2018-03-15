@@ -1,0 +1,9 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+
+ nav.navbar.navbar-default {
+    box-shadow: inset 0 -6px 8px -6px grey;
+ }
+
